@@ -7,7 +7,7 @@ class Category(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.title
 
 class Expense(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
